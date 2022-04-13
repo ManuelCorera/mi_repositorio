@@ -1,0 +1,1816 @@
+/*MOBILE FIRST*/
+
+/*------------------------------------------------------------------------------------*/
+
+/*SMARTPHONE*/
+
+@media (max-width: 480px) {
+
+/*GRID INDEX*//*---------------------------*/
+    #grid-area-index {
+    display: grid;
+    height: 100vh;
+    margin: 0%;
+    grid-template-areas:
+      "cabeza"
+      "menu"
+      "articulo2"
+      "articulo3"
+      "pie";
+    grid-template-rows: repeat(5, auto); 
+    grid-template-columns: 100%;
+ }
+/*CSS MENU*/
+     #menu {
+        background-color: rgb(182, 2, 2);
+        height: 100%;
+        width: auto;
+        display: flex;
+    }
+    .menu_items {
+        display: flex;
+        list-style: none;
+    }
+    .menu_items li a {
+        padding: 7px 13px;
+        text-decoration: none;
+        display: block;
+        text-transform: uppercase;
+        color: white;
+        font-size: 10px;
+    }
+ /*CONTENIDO*/
+header { 
+    grid-area: cabeza;
+    background-color: rgb(0, 0, 0);  
+ }
+nav {
+    grid-area: menu;
+    display: flex;
+    background-color: green;
+    justify-content: center;
+    align-content: center;
+ }
+ #articulo1 {display: none}
+ #articulo2 {
+    grid-area: articulo2;
+ }
+ #articulo3 {
+    grid-area: articulo3;    
+ }
+ #articulo4 {display: none} 
+ #publicidad-index {display: none}
+ footer {
+    grid-area: pie;
+    background-color: black;
+    color: aliceblue;
+    margin-top: auto;
+    width: 100%;
+    padding: 10px;
+ } 
+ /*CSS GENERAL*/ 
+ .body-index {
+    display: block;
+    background-color: rgb(81, 185, 81);
+ }
+#secciones-index {
+    color: rgb(0, 0, 0);
+    margin: 1px;
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+}
+*{
+    box-sizing: border-box;
+}
+#noticias-index {
+    margin: 10px;
+    padding: 25px;
+    text-align: center;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+/*GRID VALORACION*//*-----------------------------*/
+#grid-area-valoracion {
+    display: grid;
+    height: 100vh;
+    margin: 0%;
+    grid-template-areas:
+      "cabeza"
+      "menu"
+      "articulo1"
+      "articulo2"
+      "pie";
+    grid-template-rows: repeat(5, auto); 
+    grid-template-columns: 100%;
+    background-color: rgb(169, 180, 180);
+ }
+ /*CONTENIDO*/
+ header { 
+    grid-area: cabeza;
+    background-color: rgb(0, 0, 0);
+ }
+nav {
+    grid-area: menu;
+    display: flex;
+    background-color: green;
+    justify-content: center;
+    align-content: center;
+ }
+ #articulo1v {
+    grid-area: articulo1; 
+    width: 100%;  
+    height: fit-content; 
+ }
+ #articulo2v {
+    grid-area: articulo2; 
+    width: 100vw;
+ }
+ *{
+    box-sizing: border-box;
+}
+ footer {
+    grid-area: pie;
+    background-color: black;
+    color: aliceblue;
+    margin-top: auto;
+    width: 100%;
+    padding: 10px;
+ } 
+ /*CSS MENU*/
+ #menuv {
+    background-color: rgb(182, 2, 2);
+    height: 100%;
+    width: auto;
+    display: flex;
+    margin-top: -10px;
+}
+.menu_items {
+    display: flex;
+    list-style: none;
+}
+.menu_items li a {
+    padding: 7px 13px;
+    text-decoration: none;
+    display: block;
+    text-transform: uppercase;
+    color: white;
+    font-size: 10px;
+}
+/*CSS GENERAL*/
+ #subtitulo-v {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin: 5px;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 10px;
+}
+#textocuadro-v {
+    text-align: center;
+    font-size: 18px;
+    font-style: italic;
+    background-color: black;
+    color: rgb(255, 255, 255);
+}
+#cuadrogeneral-v {
+    background-color: rgb(132, 151, 151);
+    margin: 5px;
+    padding: 5px;
+    box-shadow: 10px;
+    text-align: center;
+}
+/* CLASES */
+.cursiva {
+font-style: italic;
+}
+.sinsubrayar {
+text-decoration: none;
+}
+
+/*GRID CONTACTO*//*-----------------------------*/
+#grid-area-contacto {
+    display: grid;
+    height: 100vh;
+    margin: 0%;
+    grid-template-areas:
+      "cabeza"
+      "menu"
+      "articulo1"
+      "articulo2"
+      "pie";
+    grid-template-rows: 1fr 2fr 12fr 1fr; 
+    grid-template-columns: 100%;
+ }
+ /*CONTENIDO*/
+ header { 
+    grid-area: cabeza;
+    background-color: rgb(0, 0, 0);  
+ }
+nav {
+    grid-area: menu;
+    display: flex;
+    background-color: green;
+    justify-content: center;
+    align-content: center;
+ }
+ #articulo1c {
+    grid-area: articulo1;     
+ }
+ #articulo2c {
+    grid-area: articulo2; 
+    width: 100vw;
+ }
+ *{
+    box-sizing: border-box;
+}
+footer {
+    grid-area: pie;
+    background-color: black;
+    color: aliceblue;
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+ } 
+ /*CSS MENU*/
+ #menuc {
+    background-color: rgb(182, 2, 2);
+    height: 100%;
+    width: auto;
+    display: flex;
+}
+.menu_items {
+    display: flex;
+    list-style: none;
+}
+.menu_items li a {
+    padding: 7px 13px;
+    text-decoration: none;
+    display: block;
+    text-transform: uppercase;
+    color: white;
+    font-size: 10px;
+}
+/*CSS GENERAL*/
+.body-contacto {
+    display: block;
+    background-image: url(../imagenes/diego2.jpg);
+    background-size: contain;
+    min-height: 10vh;
+    position: relative;
+}
+#subtitulo-c {
+    text-align: left;
+    color: rgb(0, 0, 0);
+    margin: 5px;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+}
+.caja-c {
+    background-color: rgb(120, 187, 117);
+    display: block;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+}
+.box-c {
+    color: white;
+    font-size: 25px;
+}
+
+/*GRID NOSOTROS*//*-----------------------------------*/
+#grid-area-nosotros {
+    display: grid;
+    height: 100vh;
+    margin: 0%;
+    grid-template-areas:
+      "cabeza"
+      "menu"
+      "articulo1"
+      "pie";
+    grid-template-rows: 1fr 2fr 12fr 1fr; 
+    grid-template-columns: 100%;
+ }
+/*CONTENIDO*/
+ header { 
+    grid-area: cabeza;
+    background-color: rgb(0, 0, 0);  
+ }
+nav {
+    grid-area: menu;
+    display: flex;
+    background-color: green;
+    justify-content: center;
+    align-content: center;
+ }
+ #menun {
+    background-color: rgb(182, 2, 2);
+    height: 100%;
+    width: auto;
+    display: flex;
+}
+.menu_items {
+    display: flex;
+    list-style: none;
+}
+.menu_items li a {
+    padding: 7px 13px;
+    text-decoration: none;
+    display: block;
+    text-transform: uppercase;
+    color: white;
+    font-size: 10px;
+}
+*{
+    box-sizing: border-box;
+}
+ #articulo1n {
+    grid-area: articulo1;     
+ }
+.body-nosotros {
+    display: block;
+    background-image: url(../imagenes/diego2.jpg);
+    background-size: contain;
+    min-height: 10vh;
+    position: relative;
+}
+#subtitulo-n {
+    text-align: left;
+    color: rgb(0, 0, 0);
+    margin: 5px;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+}
+#info-n {
+    background-color: rgb(203, 207, 212);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 20px;
+    text-align: left;
+    font-size: 20px;
+}
+aside {display: none}
+footer {
+    grid-area: pie;
+ } 
+ .pie-n {
+    background-color: black;
+    color: aliceblue;
+    margin-top: auto;
+    width: 100%;
+    padding: 10px;
+    bottom: 0%;
+ }
+ /*GRID PRODUCTOS*/
+ #grid-area-productos {
+    display: grid;
+    height: 100vh;
+    margin: 0%;
+    grid-template-areas:
+      "cabeza"
+      "menu"
+      "articulo1"
+      "articulo2"
+      "articulo3"
+      "pie";
+    grid-template-rows: 1fr 2fr 6fr 6fr 1fr; 
+    grid-template-columns: 100%;
+ }
+ /*CONTENIDO*/
+ header { 
+    grid-area: cabeza;
+    background-color: rgb(0, 0, 0);  
+ }
+nav {
+    grid-area: menu;
+    display: flex;
+    background-color: green;
+    justify-content: center;
+    align-content: center;
+ }
+ #articulo1p {
+    grid-area: articulo1; 
+    width: 100%;
+ }
+ #articulo2p {
+    grid-area: articulo2;
+    background-color: rgb(110, 192, 110);
+ }
+ #articulo3p {
+    grid-area: articulo3;
+ } 
+ *{
+    box-sizing: border-box;
+}
+footer {
+    grid-area: pie;
+    background-color: black;
+    color: aliceblue;
+    margin-top: auto;
+    width: 100%;
+    padding: 10px;
+ } 
+ /*CSS MENU*/
+ #menup {
+    background-color: rgb(182, 2, 2);
+    height: 100%;
+    width: auto;
+    display: flex;
+}
+.menu_items {
+    display: flex;
+    list-style: none;
+}
+.menu_items li a {
+    padding: 7px 13px;
+    text-decoration: none;
+    display: block;
+    text-transform: uppercase;
+    color: white;
+    font-size: 10px;
+}
+/*CSS GENERAL*/
+.body-productos {
+    display: block;
+    background-image: url(../imagenes/diego2.jpg);
+    background-size: contain;
+    min-height: 10vh;
+    position: relative;
+}
+.subtitulo-p {
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+}
+#subtitulo-p {
+    text-align: left;
+    color: rgb(0, 0, 0);
+    margin: 5px;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+} 
+.opciones-p {
+    margin: 40px;
+    padding: 15px;
+    text-align: center;
+    margin-top: -10px;
+    background-color: rgb(208, 228, 228);
+    font-style: italic;
+    font-size: 20px;
+    font-weight: bold;
+ }  
+ .comprar-p {
+    width: 100vw;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+/*CLASES*/
+.cursiva {
+    font-style: italic;
+}
+.negrita {
+    font-weight: bold;
+}
+.textomediano {
+    font-size: 30px;
+}
+.sinsubrayar {
+    text-decoration: none;
+}
+.textochico {
+    font-size: 30px;
+}
+.subrayar {
+    text-decoration: underline;
+}
+.alinear {
+    text-align: center;
+}
+.textogrande {
+    font-size: 30px;
+} 
+}
+
+/*------------------------------------------------------------------------------------*/
+
+/*TABLET*/
+@media (min-width: 481px) and (max-width: 1023px) {
+    
+    /*GRID INDEX*//*-------------------------------------*/
+ #grid-area-index {
+        display: grid;
+        height: 100vh;
+        margin: 0%;
+        grid-template-areas:
+          "cabeza"
+          "menu"
+          "articulo2"
+          "articulo3"
+          "pie";
+        grid-template-rows: repeat(5, auto); 
+        grid-template-columns: 100%;
+     }
+    /*CONTENIDO*/
+    header { 
+        grid-area: cabeza;
+        background-color: black;  
+     }
+    nav {
+        grid-area: menu;
+        display: flex;
+        background-color: green;
+        justify-content: center;
+        align-content: center;
+     }
+     *{
+        box-sizing: border-box;
+    }
+     #articulo1 {display: none}
+     #articulo2 {
+        grid-area: articulo2;
+     }
+     #articulo3 {
+        grid-area: articulo3;    
+     }
+     #articulo4 {display: none}
+     #publicidad-index {display: none}
+     footer {
+        grid-area: pie;
+        background-color: black;
+        color: aliceblue;
+        margin-top: auto;
+        width: 100%;
+        padding: 10px;
+     } 
+     /*CSS MENU*/
+     #menu {
+        background-color: green;
+        height: 100%;
+        width: auto;
+        display: flex;
+    }
+    .menu_items {
+        display: flex;
+        list-style: none;
+    }
+    .menu_items li a {
+        padding: 7px 13px;
+        text-decoration: none;
+        display: block;
+        text-transform: uppercase;
+        color: white;
+        font-size: 10px;
+    }   
+     /*CSS GENERAL*/ 
+     .body-index {
+        display: block;
+        background-image: url(../imagenes/diego2.jpg);
+        background-size: contain;
+        min-height: 10vh;
+        position: relative;
+    }
+    #secciones-index {
+        color: rgb(255, 255, 255);
+        margin: 1px;
+        width: 100%;
+        padding: 5px;
+        text-align: center;
+        background-color: rgb(114, 0, 0);
+    }
+    #noticias-index {
+        margin: 10px;
+        padding: 25px;
+        text-align: center;
+        font-style: italic;
+        font-weight: bolder;
+        background-color: black;
+        color: aliceblue;
+    }
+
+    /*GRID VALORACION*//*-----------------------------*/
+    #grid-area-valoracion {
+        display: grid;
+        height: 100vh;
+        margin: 0%;
+        grid-template-areas:
+          "cabeza"
+          "menu"
+          "articulo1"
+          "articulo2"
+          "pie";
+        grid-template-rows: 1fr 2fr 2fr 8fr 1fr; 
+        grid-template-columns: 100%;
+        background-color: rgb(169, 180, 180);
+     }
+     /*CONTENIDO*/
+     header { 
+        grid-area: cabeza;
+        background-color: rgb(0, 0, 0);  
+     }
+    nav {
+        grid-area: menu;
+        display: flex;
+        background-color: green;
+        justify-content: center;
+        align-content: center;
+     }
+     #articulo1v {
+        grid-area: articulo1; 
+        width: 100%;  
+        height: fit-content; 
+     }
+     #articulo2v {
+        grid-area: articulo2; 
+        width: 100vw;
+     }
+     footer {
+        grid-area: pie;
+        background-color: black;
+        color: aliceblue;
+        margin-top: auto;
+        width: 100%;
+        padding: 10px;
+     } 
+     *{
+        box-sizing: border-box;
+    }
+    /*CSS MENU*/
+     #menuv {
+        background-color: green;
+        height: 100%;
+        width: auto;
+        display: flex;
+    }
+    .menu_items {
+        display: flex;
+        list-style: none;
+    }
+    .menu_items li a {
+        padding: 7px 13px;
+        text-decoration: none;
+        display: block;
+        text-transform: uppercase;
+        color: white;
+        font-size: 10px;
+    }
+    /*CSS GENERAL*/
+    #subtitulo-v {
+        text-align: center;
+        color: rgb(255, 255, 255);
+        margin: 5px;
+        padding: 20px;
+        background-color: black;
+    }
+    #textocuadro-v {
+        text-align: center;
+        font-size: 18px;
+        margin-top: 30px;
+        font-style: italic;
+    }
+    #cuadrogeneral-v {
+        background-color: rgb(132, 151, 151);
+        padding: 5px;
+        box-shadow: 10px;
+        text-align: center;
+        width: 100%;
+    }
+
+    /*GRID CONTACTO*//*-----------------------------------*/
+    #grid-area-contacto {
+        display: grid;
+        height: 100vh;
+        margin: 0%;
+        grid-template-areas:
+          "cabeza"
+          "menu"
+          "articulo1"
+          "articulo2"
+          "pie";
+        grid-template-rows: 1fr 2fr 12fr 1fr; 
+        grid-template-columns: 100%;
+     }
+     /*CONTENIDO*/
+     header { 
+        grid-area: cabeza;
+        background-color: rgb(0, 0, 0);  
+     }
+    nav {
+        grid-area: menu;
+        display: flex;
+        background-color: green;
+        justify-content: center;
+        align-content: center;
+     }
+     #articulo1c {
+        grid-area: articulo1;     
+     }
+     #articulo2c {
+        grid-area: articulo2; 
+        width: 100vw;
+     }
+     *{
+        box-sizing: border-box;
+    }
+    footer {
+        grid-area: pie;
+        background-color: black;
+        color: aliceblue;
+        margin-top: 10px;
+        width: 100%;
+        padding: 10px;
+     } 
+     /*CSS MENU*/
+     #menuc {
+        background-color: green;
+        height: 100%;
+        width: auto;
+        display: flex;
+    }
+    .menu_items {
+        display: flex;
+        list-style: none;
+    }
+    .menu_items li a {
+        padding: 7px 13px;
+        text-decoration: none;
+        display: block;
+        text-transform: uppercase;
+        color: white;
+        font-size: 10px;
+    }
+    /*CSS GENERAL*/
+    .body-contacto {
+        display: block;
+        background-image: url(../imagenes/diego2.jpg);
+        background-size: contain;
+        min-height: 10vh;
+        position: relative;
+    }
+    #subtitulo-c {
+        text-align: left;
+        color: rgb(255, 255, 255);
+        margin: 5px;
+        padding: 20px;
+        background-color: rgb(0, 0, 0);
+    }
+    .caja-c{
+        background-color: rgb(122, 59, 59);
+        display: block;
+        padding: 15px;
+        text-align: center;
+        width: 100%;
+    }
+    .box-c {
+        color: white;
+        font-size: 25px;
+    }
+
+    /*GRID NOSOTROS*//*---------------------------------------*/
+    #grid-area-nosotros {
+        display: grid;
+        height: 100vh;
+        margin: 0%;
+        grid-template-areas:
+          "cabeza"
+          "menu"
+          "articulo1"
+          "pie";
+        grid-template-rows: 1fr 2fr 12fr 1fr; 
+        grid-template-columns: 100%;
+     }
+     /*CONTENIDO*/
+     header { 
+        grid-area: cabeza;
+        background-color: rgb(0, 0, 0);  
+     }
+    nav {
+        grid-area: menu;
+        display: flex;
+        background-color: green;
+        justify-content: center;
+        align-content: center;
+     }
+     #menun {
+        background-color: green;
+        height: 100%;
+        width: auto;
+        display: flex;
+    }
+    .menu_items {
+        display: flex;
+        list-style: none;
+    }
+    .menu_items li a {
+        padding: 7px 13px;
+        text-decoration: none;
+        display: block;
+        text-transform: uppercase;
+        color: white;
+        font-size: 10px;
+    }
+    *{
+        box-sizing: border-box;
+    }
+     #articulo1n {
+        grid-area: articulo1;     
+     }
+    .body-nosotros {
+        display: block;
+        background-image: url(../imagenes/diego2.jpg);
+        background-size: contain;
+        min-height: 10vh;
+        position: relative;
+    }
+    #subtitulo-n {
+        text-align: left;
+        color: rgb(255, 255, 255);
+        margin: 5px;
+        padding: 20px;
+        background-color: rgb(0, 0, 0);
+    }
+    #info-n {
+        background-color: rgb(203, 207, 212);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        padding: 20px;
+        text-align: left;
+        font-size: 20px;
+    }
+    aside {display: none}
+    footer {
+        grid-area: pie;
+     } 
+     .pie-n {
+        background-color: black;
+        color: aliceblue;
+        margin-top: auto;
+        width: 100%;
+        padding: 10px;
+        bottom: 0%;
+     }
+
+    /*GRID PRODUCTOS*/
+    #grid-area-productos {
+        display: grid;
+        height: 100vh;
+        margin: 0%;
+        grid-template-areas:
+          "cabeza"
+          "menu"
+          "articulo1"
+          "articulo2"
+          "articulo3"
+          "pie";
+        grid-template-rows: 1fr 2fr 6fr 6fr 1fr; 
+        grid-template-columns: 100%;
+     }
+     /*CONTENIDO*/
+     header { 
+        grid-area: cabeza;
+        background-color: rgb(0, 0, 0);  
+     }
+    nav {
+        grid-area: menu;
+        display: flex;
+        background-color: green;
+        justify-content: center;
+        align-content: center;
+     }
+     #articulo1p {
+        grid-area: articulo1; 
+        width: 100%;
+     }
+     #articulo2p {
+        grid-area: articulo2;
+        background-color: rgb(116, 230, 101);
+     }
+     #articulo3p {
+        grid-area: articulo3;
+     }  
+     *{
+        box-sizing: border-box;
+    }
+    footer {
+        grid-area: pie;
+        background-color: black;
+        color: aliceblue;
+        margin-top: auto;
+        width: 100%;
+        padding: 10px;
+     } 
+     /*CSS MENU*/
+     #menup {
+        background-color: green;
+        height: 100%;
+        width: auto;
+        display: flex;
+    }
+    .menu_items {
+        display: flex;
+        list-style: none;
+    }
+    .menu_items li a {
+        padding: 7px 13px;
+        text-decoration: none;
+        display: block;
+        text-transform: uppercase;
+        color: white;
+        font-size: 10px;
+    }
+    /*CSS GENERAL*/
+    .body-productos {
+        display: block;
+        background-image: url(../imagenes/diego2.jpg);
+        background-size: contain;
+        min-height: 10vh;
+        position: relative;
+    }
+    .subtitulo-p {
+        background-color: rgb(117, 0, 0);
+        color: aliceblue;
+    }
+    #subtitulo-p {
+        text-align: left;
+        color: rgb(255, 255, 255);
+        margin: 5px;
+        padding: 20px;
+        background-color: rgb(0, 0, 0);
+    }
+    .opciones-p {
+        margin: 40px;
+        padding: 15px;
+        text-align: center;
+        margin-top: -10px;
+        background-color: rgb(208, 228, 228);
+        font-style: italic;
+        font-size: 20px;
+        font-weight: bold;
+     }  
+     .comprar-p {
+        width: 100vw;
+        text-align: center;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    /*CLASES*/
+    .cursiva {
+        font-style: italic;
+    }
+    .negrita {
+        font-weight: bold;
+    }
+    .textomediano {
+        font-size: 30px;
+    }
+    .sinsubrayar {
+        text-decoration: none;
+    }
+    .textochico {
+        font-size: 30px;
+    }
+    .subrayar {
+        text-decoration: underline;
+    }
+    .alinear {
+        text-align: center;
+    }
+    .textogrande {
+        font-size: 30px;
+    } 
+    /*-------------------------------------------------------------------------------*/
+
+
+}
+
+/*------------------------------------------------------------------------------------*/
+
+/*DESKTOP*/
+@media (min-width: 1024px){
+    
+    /*GRID INDEX*//*---------------------------------*/
+
+#grid-area-index {
+    display: grid;
+    height: 100vh;
+    grid-template-areas:
+      "cabeza menu menu"
+      "articulo1 articulo1 articulo1"
+      "articulo2 articulo2 articulo2"
+      "articulo3 articulo3 articulo3"
+      "articulo4 articulo4 articulo4"
+      "publicidad publicidad publicidad"
+      "pie pie pie";
+    grid-template-rows: repeat(100%); 
+    grid-template-columns: repeat(100vw);
+    grid column-gap: 5px;
+    grid-row-gap: 5px;
+
+ }
+/*CONTENIDO*/
+header {
+    grid-area: cabeza;
+    display: flex;
+    background-color: green;
+ }
+ nav {
+    grid-area: menu;
+    display: flex;
+    background-color: green;
+    justify-content: center;
+    align-content: center;
+ }
+ #articulo1 {
+    grid-area: articulo1; 
+    width: 100%;  
+    height: fit-content;  
+ }
+ #articulo2 {
+    grid-area: articulo2; 
+    height: fit-content;  
+ }
+ #articulo3 {
+    grid-area: articulo3;
+    height: fit-content;      
+ }
+ #articulo4 {
+    grid-area: articulo4;
+    height: fit-content;
+ }
+ footer {
+    grid-area: pie;
+    background-color: black;
+    color: aliceblue;
+    margin-top: auto;
+    width: 100%;
+    padding: 30px;
+    margin: -10px;
+    position: absolute;
+    border: solid 1px black ;
+ }
+/*CSS MENU*/
+.logo {
+    background-color: green;
+    height: 75px;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border bottom: 1px solid;
+    box-shadow: 5px 0 10px rgba(0,0,0,-6);
+    color: white;
+ }
+ #menu {
+    background-color: green;
+    height: 75px;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border bottom: 1px solid;
+    box-shadow: 5px 0 10px rgba(0,0,0,-6);
+}
+.menu_items {
+    display: flex;
+    list-style: none;
+    margin-right: 60px;
+    justify-content: space-between;
+}
+.menu_items li {
+    border-radius: 3px;
+    margin: 0 5px;
+}
+.menu_items li a {
+    padding: 7px 13px;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    text-transform: uppercase;
+    color: white;
+}
+/*CSS GENERAL*/
+.body-index {
+    display: block;
+    background-image: url(../imagenes/diego2.jpg);
+    background-size: contain;
+    min-height: 10vh;
+    position: relative;
+}
+header, nav, section, footer {
+    padding: 10px;
+}
+#noticias-index {
+    color: rgb(0, 0, 0);
+    background-color: rgb(175, 212, 180);
+    margin: 10px;
+    padding: 25px;
+    margin-top: -35px;
+    text-align: center;
+    font-style: italic;
+}
+#secciones-index {
+    color: rgb(218, 45, 45);
+    margin: 1px;
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+    background-color: black;
+    font-size: 35px;
+}
+*{
+    box-sizing: border-box;
+}
+#publicidad-index {
+    grid-area: publicidad;
+    text-align: center;
+    background-color: black;
+    margin: -10px;
+}
+#subtitulo-index {
+    color: black;
+    text-align: center;
+    font-weight: normal;
+    background-color: rgb(122, 235, 122);
+    margin: 3px;
+    width: 100vw;
+    padding: 25px;
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+}
+/*CONTENIDO*/
+.contenido-index {
+    height: auto;
+    /*flexbox*/
+    display: inline-block;
+    width: fit-content;
+}
+.caja1-index {
+    height: auto;
+    width: auto;
+    height: auto;
+    margin: 20px;
+    box-sizing: border-box;
+    font-size: 50px;
+    object-fit: cover;
+    padding: 45px;
+}
+.caja2-index {
+width: fit-content;
+    margin: 20px;
+    box-sizing: border-box;
+    font-size: 50px;
+    object-fit: cover;
+    padding: 45px;
+}
+.padre-flex-index {
+    display: flex;  
+    padding: 10px;
+    border: 2px;
+ }
+ .hijos-flex-index {
+     margin: 10px;
+     text-align: center;
+     color: aliceblue;
+ }
+ /* CLASES */
+ .cursiva {
+    font-style: italic;
+}
+.negrita {
+    font-weight: bold;
+}
+.normal {
+    font-weight: normal;
+}
+.textogrande {
+    font-size: 35px;
+}
+.textomasgrande {
+    font-size: 50px;
+}
+.textomediano {
+    font-size: 30px;
+}
+.sinsubrayar {
+    text-decoration: none;
+}
+.bloque {
+    display: block;
+}
+.textopequeño {
+    font size: 10px;
+}
+.alinear {
+    text-align: center;
+}
+.fondo {
+   background-color: black;
+   width: 100%;
+   margin: -10px;
+}
+
+/*GRID VALORACION*//*--------------------------*/
+
+#grid-area-valoracion {
+    display: grid;
+    grid-template-areas:
+      "cabeza menu menu"
+      "articulo1 articulo1 articulo1"
+      "articulo2 articulo2 articulo2"
+      "pie pie pie";
+      grid-template-rows: 100px auto auto 75px; 
+      grid-template-columns: 20% auto 15%;
+    grid column-gap: 5px;
+    grid-row-gap: 10px;
+    background-color: rgb(169, 180, 180);
+ }
+ /*CONTENIDO*/
+ header {
+    grid-area: cabeza;
+    display: flex;
+    background-color: green;
+ }
+ nav {
+    grid-area: menu;
+    display: flex;
+    background-color: green;
+    justify-content: center;
+    align-content: center;
+ }
+ #articulo1v {
+    grid-area: articulo1; 
+    width: 100%;  
+    height: fit-content; 
+ }
+ #articulo2v {
+    grid-area: articulo2; 
+    width: 100vw;
+ }
+ footer {
+    grid-area: pie;
+ }
+ /*CSS GENERAL*/
+ #subtitulo-v {
+    text-align: left;
+    color: rgb(255, 255, 255);
+    margin: 5px;
+    width: 50vw;
+    padding: 20px;
+    background-color: black;
+}
+header, nav, section, footer {
+    padding: 10px;
+}
+#cuadrogeneral-v {
+    background-color: rgb(132, 151, 151);
+    margin: 5px;
+    padding: 5px;
+    box-shadow: 10px;
+    text-align: center;
+}
+#textocuadro-v {
+    text-align: center;
+    font-style: italic;
+}
+.pie-v {
+    background-color: black;
+    color: aliceblue;
+    margin-top: auto;
+    width: 100vw;
+    padding: 30px;
+    margin: 1px;
+    position: absolute;
+    bottom: 0%;
+    border: solid 1px black ;
+}
+ /*CSS MENU*/
+ .logo {
+    background-color: green;
+    height: 75px;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border bottom: 1px solid;
+    box-shadow: 5px 0 10px rgba(0,0,0,-6);
+    color: white;
+ }
+ #menuv {
+    background-color: green;
+    height: 75px;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border bottom: 1px solid;
+    box-shadow: 5px 0 10px rgba(0,0,0,-6);
+}
+.menu_items {
+    display: flex;
+    list-style: none;
+    margin-right: 60px;
+    justify-content: space-between;
+}
+.menu_items li {
+    border-radius: 3px;
+    margin: 0 5px;
+}
+.menu_items li a {
+    padding: 7px 13px;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    text-transform: uppercase;
+    color: white;
+}
+/* CLASES */
+.cursiva {
+    font-style: italic;
+}
+.sinsubrayar {
+    text-decoration: none;
+}
+
+/*GRID CONTACTO*//*--------------------------------------------*/
+#grid-area-contacto {
+    display: grid;
+    grid-template-areas:
+      "cabeza menu menu"
+      "articulo1 articulo1 articulo1"
+      "articulo2 articulo2 articulo2"
+      "pie pie pie";
+      grid-template-rows: 100px 10px auto 10px; 
+      grid-template-columns: 20% auto 15%;
+    grid column-gap: 5px;
+    grid-row-gap: 5px;
+ }
+ /*CONTENIDO*/
+ header {
+    grid-area: cabeza;
+    display: flex;
+    background-color: green;
+ }
+ nav {
+    grid-area: menu;
+    display: flex;
+    background-color: green;
+    justify-content: center;
+    align-content: center;
+ }
+ #articulo1c {
+    grid-area: articulo1; 
+    width: 100%;  
+    height: fit-content; 
+ }
+ #articulo2c {
+    grid-area: articulo2; 
+    width: 100vw;
+ }
+ footer {
+    grid-area: pie;
+ }
+ /*CSS MENU*/
+      .logo {
+    background-color: green;
+    height: 75px;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border bottom: 1px solid;
+    box-shadow: 5px 0 10px rgba(0,0,0,-6);
+    color: white;
+ }
+ #menuc {
+    background-color: green;
+    height: 75px;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border bottom: 1px solid;
+    box-shadow: 5px 0 10px rgba(0,0,0,-6);
+}
+.menu_items {
+    display: flex;
+    list-style: none;
+    margin-right: 60px;
+    justify-content: space-between;
+}
+.menu_items li {
+    border-radius: 3px;
+    margin: 0 5px;
+}
+.menu_items li a {
+    padding: 7px 13px;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    text-transform: uppercase;
+    color: white;
+}
+ /*CSS GENERAL*/
+ header, nav, section, footer {
+    padding: 10px;
+}
+.caja-c{
+    background-color: rgb(120, 187, 117);
+    display: block;
+    margin: 70px;
+    padding: 15px;
+    text-align: center;
+    width: 80vw;
+}
+.pie-c {
+    margin-bottom: -360px;
+    background-color: black;
+    color: aliceblue;
+    margin-top: auto;
+    width: 100%;
+    padding: 30px;
+    position: absolute;
+    border: solid 1px black ;
+    bottom: 0%;
+}
+.body-contacto {
+    font-family: "ramaraja";
+    src: url(Ramaraja-Regular.ttf);
+    background-image: url(../imagenes/diego2.jpg);
+    background-size: contain;
+    min-height: 100vh;
+    display: block;
+    margin: 5px;
+}
+#subtitulo-c {
+    text-align: left;
+    color: rgb(255, 255, 255);
+    margin: 5px;
+    width: 40vw;
+    padding: 20px;
+    background-color: black;
+}
+* {
+    box-sizing: border-box;
+}
+.box-c {
+    color: white;
+    font-size: 45px;
+    text-decoration: underline;
+} 
+/* CLASES */
+.cursiva {
+    font-style: italic;
+}
+.negrita {
+    font-weight: bold;
+}
+.textogrande {
+    font-size: 35px;
+}
+.textomasgrande {
+    font-size: 50px;
+}
+.textomediano {
+    font-size: 30px;
+}
+.sinsubrayar {
+    text-decoration: none;
+}
+.textochico {
+    font-size: 30px;
+}
+.subrayar {
+    text-decoration: underline;
+}
+.alinear {
+    text-align: center;
+}
+
+/*GRID NOSOTROS*//*-------------------------------------------*/
+#grid-area-nosotros {
+    display: grid;
+    grid-template-areas:
+      "cabeza menu menu"
+      "articulo1 articulo1 publicidad"
+      "pie pie pie";
+    grid-template-rows: 100px 2fr 75px; 
+    grid-template-columns: 20% auto 15%;
+    grid column-gap: 5px;
+    grid-row-gap: 5px;
+ }
+ /*CONTENIDO*/
+ header {
+    grid-area: cabeza;
+    display: flex;
+    background-color: green;
+ }
+ nav {
+    grid-area: menu;
+    display: flex;
+    background-color: green;
+    justify-content: center;
+    align-content: center;
+ }
+ aside {
+    grid-area: publicidad;
+ }
+ #articulo1n {
+    grid-area: articulo1;     
+ }
+ footer {
+    grid-area: pie;
+ } 
+ .pie-n {
+    background-color: black;
+    color: aliceblue;
+    margin-top: auto;
+    width: 100%;
+    padding: 10px;
+    bottom: 0%;
+ }
+ /*CSS MENU*/
+ .logo {
+    background-color: green;
+    height: 75px;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border bottom: 1px solid;
+    box-shadow: 5px 0 10px rgba(0,0,0,-6);
+    color: white;
+ }
+ #menun {
+    background-color: green;
+    height: 75px;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border bottom: 1px solid;
+    box-shadow: 5px 0 10px rgba(0,0,0,-6);
+}
+.menu_items {
+    display: flex;
+    list-style: none;
+    margin-right: 60px;
+    justify-content: space-between;
+}
+.menu_items li {
+    border-radius: 3px;
+    margin: 0 5px;
+}
+.menu_items li a {
+    padding: 7px 13px;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    text-transform: uppercase;
+    color: white;
+}
+/*CSS GENERAL*/
+.body-nosotros {
+    display: block;
+    background-image: url(../imagenes/diego2.jpg);
+    background-size: cover;
+    min-height: 100vh;
+}
+header, nav, section, footer {
+    padding: 10px;
+}
+#subtitulo-n {
+    text-align: left;
+    color: rgb(255, 255, 255);
+    margin: 5px;
+    width: 25vw;
+    padding: 20px;
+    background-color: black;
+    font-size: 35px;
+}
+#info-n {
+    background-color: rgb(203, 207, 212);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 20px;
+    text-align: left;
+    font-size: 30px;
+}
+* {
+    box-sizing: border-box;
+}
+/* CLASES */
+.textogrande {
+    font-size: 35px;
+}
+.textomasgrande {
+    font-size: 50px;
+}
+.textomediano {
+    font-size: 30px;
+}
+.sinsubrayar {
+    text-decoration: none;
+}
+.textochico {
+    font-size: 30px;
+}
+.alinear {
+    text-align: center;
+}
+
+/*GRID PRODUCTOS*//*----------------------------------------------*/
+    #grid-area-productos {
+        display: grid;
+        grid-template-areas:
+          "cabeza menu menu"
+          "articulo1 articulo1 articulo1"
+          "articulo2 articulo2 articulo2"
+          "articulo3 articulo3 articulo3"
+          "pie pie pie";
+          grid-template-rows: 100px auto auto auto 75px; 
+          grid-template-columns: 20% auto 15%;
+        grid column-gap: 5px;
+        grid-row-gap: 10px;
+     }
+     /*CONTENIDO*/
+     header { 
+        grid-area: cabeza;
+        background-color: rgb(0, 0, 0);  
+     }
+     nav {
+        grid-area: menu;
+        display: flex;
+        background-color: green;
+        justify-content: center;
+        align-content: center;
+     }
+     #articulo1p {
+        grid-area: articulo1; 
+        width: 100%;  
+         
+     }
+     #articulo2p {
+        grid-area: articulo2; 
+        width: 100vw;
+     }
+     #articulo3p {
+        grid-area: articulo3; 
+     }
+    * {
+        box-sizing: border-box;
+    }
+    footer {
+        grid-area: pie;
+     }
+    /*CSS MENU*/
+    .logo {
+        background-color: green;
+        height: 75px;
+        width: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border bottom: 1px solid;
+        box-shadow: 5px 0 10px rgba(0,0,0,-6);
+        color: white;
+     }
+     #menup {
+        background-color: green;
+        height: 75px;
+        width: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border bottom: 1px solid;
+        box-shadow: 5px 0 10px rgba(0,0,0,-6);
+    }
+    .menu_items {
+        display: flex;
+        list-style: none;
+        margin-right: 60px;
+        justify-content: space-between;
+    }
+    .menu_items li {
+        border-radius: 3px;
+        margin: 0 5px;
+    }
+    .menu_items li a {
+        padding: 7px 13px;
+        text-decoration: none;
+        font-size: 18px;
+        display: block;
+        text-transform: uppercase;
+        color: white;
+    }
+    /*CSS GENERAL*/
+    header, nav, section, footer {
+        padding: 10px;
+    }
+    .body-productos {
+        font-family: "ramaraja";
+        src: url(Ramaraja-Regular.ttf);
+        background-image: url(../imagenes/diego2.jpg);
+        background-size: contain;
+        min-height: 100vh;
+        display: block;
+        margin: 5px;
+    }
+    .comprar-p {
+        width: 100vw;
+        text-align: end;
+        margin-top: -108px;
+        margin-left: -100px;
+    }
+    #subtitulo-p {
+        text-align: left;
+        color: rgb(255, 255, 255);
+        margin: 5px;
+        width: 25vw;
+        padding: 20px;
+        background-color: black;
+        font-size: 30px;
+    }
+    .pie-p {
+        background-color: black;
+        color: aliceblue;
+        margin-top: auto;
+        width: 100vw;
+        padding: 30px;
+        bottom: -110%;
+        border: 1px solid black; 
+    }
+    .opciones-p {
+        margin: 40px;
+        padding: 15px;
+        text-align: center;
+        margin-top: -10px;
+        background-color: rgb(208, 228, 228);
+        font-style: italic;
+        font-size: 30px;
+        font-weight: bold;
+     }  
+    .subtitulo-p {
+        font-size: 25px;
+        background-color: rgb(255, 255, 255);
+        margin: 15px;
+        text-align: center;
+        color: black;
+        padding: 1%;
+    }
+    /*CONTENIDO*/
+    .contenido-p {
+        background: rgb(194, 180, 180);
+        height: auto;
+        /*flexbox*/
+        display: flex;
+        width: fit-content;
+        border: 2px;
+        padding: 20px;
+    }
+    .caja1-p {
+        height: auto;
+        width: auto;
+        height: auto;
+        background: white;
+        margin: 20px;
+        box-sizing: border-box;
+        font-size: 50px;
+        object-fit: cover;
+        padding: 45px;
+    }
+    .caja2-p {
+    width: fit-content;
+        background: white;
+        margin: 20px;
+        box-sizing: border-box;
+        font-size: 50px;
+        object-fit: cover;
+        padding: 45px;
+    }
+    /*CLASES*/
+    .cursiva {
+        font-style: italic;
+    }
+    .negrita {
+        font-weight: bold;
+    }
+    .textomediano {
+        font-size: 30px;
+    }
+    .sinsubrayar {
+        text-decoration: none;
+    }
+    .textochico {
+        font-size: 30px;
+    }
+    .subrayar {
+        text-decoration: underline;
+    }
+    .alinear {
+        text-align: center;
+    }
+    .textogrande {
+        font-size: 30px;
+    }
+}
+
+
