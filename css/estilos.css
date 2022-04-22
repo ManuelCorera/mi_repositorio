@@ -989,7 +989,7 @@ footer {
     
     /*GRID INDEX*//*---------------------------------*/
 
-#grid-area-index {
+   #grid-area-index {
     display: grid;
     height: 100vh;
     grid-template-areas:
@@ -1208,6 +1208,7 @@ width: fit-content;
    width: 100%;
    margin: -10px;
 }
+}
 
 /*GRID VALORACION*//*--------------------------*/
 
@@ -1330,6 +1331,7 @@ header, nav, section, footer {
 .sinsubrayar {
     text-decoration: none;
 }
+ }
 
 /*GRID CONTACTO*//*--------------------------------------------*/
 #grid-area-contacto {
