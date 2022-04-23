@@ -1208,6 +1208,23 @@ width: fit-content;
    width: 100%;
    margin: -10px;
 }
+/*ANIMACION*/
+.textoanimadoi {
+    animation-name: texto;
+    animation-duration: 1.5s;
+ }
+ 
+    @keyframes texto {
+     from {
+         transform: translateX(1000px);
+         opacity: 0;
+     to {
+  transform: translateX(0);
+  opacity: 1;
+     }
+    }
+}
+
 
 /*GRID VALORACION*//*--------------------------*/
 
@@ -1330,7 +1347,22 @@ header, nav, section, footer {
 .sinsubrayar {
     text-decoration: none;
 }
+ /*ANIMACION*/
+.textoanimadov {
+    animation-name: texto;
+    animation-duration: 1.5s;
+ }
  
+    @keyframes texto {
+     from {
+         transform: translateX(1000px);
+         opacity: 0;
+     to {
+  transform: translateX(0);
+  opacity: 1;
+     }
+    }
+ }
 
 /*GRID CONTACTO*//*--------------------------------------------*/
 #grid-area-contacto {
