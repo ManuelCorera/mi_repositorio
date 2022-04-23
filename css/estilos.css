@@ -7,112 +7,262 @@
 @media (max-width: 480px) {
 
 /*GRID INDEX*//*---------------------------*/
-    #grid-area-index {
+#grid-area-index {
     display: grid;
     height: 100vh;
-    margin: 0%;
     grid-template-areas:
-      "cabeza"
-      "menu"
-      "articulo2"
-      "articulo3"
-      "pie";
-    grid-template-rows: repeat(5, auto); 
-    grid-template-columns: 100%;
+      "cabeza menu menu"
+      "articulo1 articulo1 articulo1"
+      "articulo2 articulo2 articulo2"
+      "articulo3 articulo3 articulo3"
+      "articulo4 articulo4 articulo4"
+      "publicidad publicidad publicidad"
+      "pie pie pie";
+    grid-template-rows: repeat(100%); 
+    grid-template-columns: repeat(100vw);
+    grid column-gap: 5px;
+    grid-row-gap: 5px;
+
  }
-/*CSS MENU*/
-     #menu {
-        background-color: rgb(182, 2, 2);
-        height: 100%;
-        width: auto;
-        display: flex;
-    }
-    .menu_items {
-        display: flex;
-        list-style: none;
-    }
-    .menu_items li a {
-        padding: 7px 13px;
-        text-decoration: none;
-        display: block;
-        text-transform: uppercase;
-        color: white;
-        font-size: 10px;
-    }
- /*CONTENIDO*/
-header { 
+/*CONTENIDO*/
+header {
     grid-area: cabeza;
-    background-color: rgb(0, 0, 0);  
+    display: flex;
+    background-color: green;
  }
-nav {
+ nav {
     grid-area: menu;
     display: flex;
     background-color: green;
     justify-content: center;
     align-content: center;
  }
- #articulo1 {display: none}
+ #articulo1 {
+    grid-area: articulo1; 
+    width: 100%;  
+    height: fit-content;  
+ }
  #articulo2 {
-    grid-area: articulo2;
+    grid-area: articulo2; 
+    height: fit-content;  
  }
  #articulo3 {
-    grid-area: articulo3;    
+    grid-area: articulo3;
+    height: fit-content;      
  }
- #articulo4 {display: none} 
- #publicidad-index {display: none}
+ #articulo4 {
+    grid-area: articulo4;
+    height: fit-content;
+ }
  footer {
     grid-area: pie;
     background-color: black;
     color: aliceblue;
     margin-top: auto;
     width: 100%;
-    padding: 10px;
- } 
- /*CSS GENERAL*/ 
- .body-index {
-    display: block;
-    background-color: rgb(81, 185, 81);
+    padding: 30px;
+    margin: -10px;
+    position: absolute;
+    border: solid 1px black ;
  }
-#secciones-index {
+/*CSS MENU*/
+.logo {
+    background-color: green;
+    height: 75px;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border bottom: 1px solid;
+    box-shadow: 5px 0 10px rgba(0,0,0,-6);
+    color: white;
+ }
+ #menu {
+    background-color: green;
+    height: 75px;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border bottom: 1px solid;
+    box-shadow: 5px 0 10px rgba(0,0,0,-6);
+}
+.menu_items {
+    display: flex;
+    list-style: none;
+    margin-right: 60px;
+    justify-content: space-between;
+}
+.menu_items li {
+    border-radius: 3px;
+    margin: 0 5px;
+}
+.menu_items li a {
+    padding: 7px 13px;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    text-transform: uppercase;
+    color: white;
+}
+/*CSS GENERAL*/
+.body-index {
+    display: block;
+    background-image: url(../imagenes/diego2.jpg);
+    background-size: contain;
+    min-height: 10vh;
+    position: relative;
+}
+header, nav, section, footer {
+    padding: 10px;
+}
+#noticias-index {
     color: rgb(0, 0, 0);
+    background-color: rgb(175, 212, 180);
+    margin: 10px;
+    padding: 25px;
+    margin-top: -35px;
+    text-align: center;
+    font-style: italic;
+}
+#secciones-index {
+    color: rgb(218, 45, 45);
     margin: 1px;
     width: 100%;
     padding: 5px;
     text-align: center;
-    background-color: rgb(255, 255, 255);
+    background-color: black;
+    font-size: 35px;
 }
 *{
     box-sizing: border-box;
 }
-#noticias-index {
-    margin: 10px;
-    padding: 25px;
+#publicidad-index {
+    grid-area: publicidad;
     text-align: center;
+    background-color: black;
+    margin: -10px;
+}
+#subtitulo-index {
+    color: black;
+    text-align: center;
+    font-weight: normal;
+    background-color: rgb(122, 235, 122);
+    margin: 3px;
+    width: 100vw;
+    padding: 25px;
+    font-size: 30px;
+    font-weight: bold;
     font-style: italic;
-    font-weight: bolder;
+}
+/*CONTENIDO*/
+.contenido-index {
+    height: auto;
+    /*flexbox*/
+    display: inline-block;
+    width: fit-content;
+}
+.caja1-index {
+    height: auto;
+    width: auto;
+    height: auto;
+    margin: 20px;
+    box-sizing: border-box;
+    font-size: 50px;
+    object-fit: cover;
+    padding: 45px;
+}
+.caja2-index {
+width: fit-content;
+    margin: 20px;
+    box-sizing: border-box;
+    font-size: 50px;
+    object-fit: cover;
+    padding: 45px;
+}
+.padre-flex-index {
+    display: flex;  
+    padding: 10px;
+    border: 2px;
+ }
+ .hijos-flex-index {
+     margin: 10px;
+     text-align: center;
+     color: aliceblue;
+ }
+ /* CLASES */
+ .cursiva {
+    font-style: italic;
+}
+.negrita {
+    font-weight: bold;
+}
+.normal {
+    font-weight: normal;
+}
+.textogrande {
+    font-size: 35px;
+}
+.textomasgrande {
+    font-size: 50px;
+}
+.textomediano {
+    font-size: 30px;
+}
+.sinsubrayar {
+    text-decoration: none;
+}
+.bloque {
+    display: block;
+}
+.textopequeño {
+    font size: 10px;
+}
+.alinear {
+    text-align: center;
+}
+.fondo {
+   background-color: black;
+   width: 100%;
+   margin: -10px;
+}
+/*ANIMACION*/
+.textoanimadoi {
+    animation-name: texto;
+    animation-duration: 1.5s;
+ }
+ 
+    @keyframes texto {
+     from {
+         transform: translateX(1000px);
+         opacity: 0;
+     to {
+  transform: translateX(0);
+  opacity: 1;
+     }
 }
 
 /*GRID VALORACION*//*-----------------------------*/
 #grid-area-valoracion {
     display: grid;
-    height: 100vh;
-    margin: 0%;
     grid-template-areas:
-      "cabeza"
-      "menu"
-      "articulo1"
-      "articulo2"
-      "pie";
-    grid-template-rows: repeat(5, auto); 
-    grid-template-columns: 100%;
+      "cabeza menu menu"
+      "articulo1 articulo1 articulo1"
+      "articulo2 articulo2 articulo2"
+      "pie pie pie";
+      grid-template-rows: 100px auto auto 75px; 
+      grid-template-columns: 20% auto 15%;
+    grid column-gap: 5px;
+    grid-row-gap: 10px;
     background-color: rgb(169, 180, 180);
  }
  /*CONTENIDO*/
- header { 
+ header {
     grid-area: cabeza;
-    background-color: rgb(0, 0, 0);
+    display: flex;
+    background-color: green;
  }
-nav {
+ nav {
     grid-area: menu;
     display: flex;
     background-color: green;
@@ -128,52 +278,20 @@ nav {
     grid-area: articulo2; 
     width: 100vw;
  }
- *{
-    box-sizing: border-box;
-}
  footer {
     grid-area: pie;
-    background-color: black;
-    color: aliceblue;
-    margin-top: auto;
-    width: 100%;
-    padding: 10px;
- } 
- /*CSS MENU*/
- #menuv {
-    background-color: rgb(182, 2, 2);
-    height: 100%;
-    width: auto;
-    display: flex;
-    margin-top: -10px;
-}
-.menu_items {
-    display: flex;
-    list-style: none;
-}
-.menu_items li a {
-    padding: 7px 13px;
-    text-decoration: none;
-    display: block;
-    text-transform: uppercase;
-    color: white;
-    font-size: 10px;
-}
-/*CSS GENERAL*/
+ }
+ /*CSS GENERAL*/
  #subtitulo-v {
-    text-align: center;
-    color: rgb(0, 0, 0);
-    margin: 5px;
-    padding: 20px;
-    background-color: rgb(255, 255, 255);
-    margin-top: 10px;
-}
-#textocuadro-v {
-    text-align: center;
-    font-size: 18px;
-    font-style: italic;
-    background-color: black;
+    text-align: left;
     color: rgb(255, 255, 255);
+    margin: 5px;
+    width: 50vw;
+    padding: 20px; 
+    background-color: black;
+}
+header, nav, section, footer {
+    padding: 10px;
 }
 #cuadrogeneral-v {
     background-color: rgb(132, 151, 151);
@@ -182,12 +300,83 @@ nav {
     box-shadow: 10px;
     text-align: center;
 }
+#textocuadro-v {
+    text-align: center;
+    font-style: italic;
+}
+.pie-v {
+    background-color: black;
+    color: aliceblue;
+    margin-top: auto;
+    width: 100vw;
+    padding: 30px;
+    margin: 1px;
+    position: absolute;
+    bottom: 0%;
+    border: solid 1px black ;
+}
+ /*CSS MENU*/
+ .logo {
+    background-color: green;
+    height: 75px;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border bottom: 1px solid;
+    box-shadow: 5px 0 10px rgba(0,0,0,-6);
+    color: white;
+ }
+ #menuv {
+    background-color: green;
+    height: 75px;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border bottom: 1px solid;
+    box-shadow: 5px 0 10px rgba(0,0,0,-6);
+}
+.menu_items {
+    display: flex;
+    list-style: none;
+    margin-right: 60px;
+    justify-content: space-between;
+}
+.menu_items li {
+    border-radius: 3px;
+    margin: 0 5px;
+}
+.menu_items li a {
+    padding: 7px 13px;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    text-transform: uppercase;
+    color: white;
+}
 /* CLASES */
 .cursiva {
-font-style: italic;
+    font-style: italic;
 }
 .sinsubrayar {
-text-decoration: none;
+    text-decoration: none;
+}
+/*ANIMACION*/
+.textoanimadov {
+    animation-name: texto;
+    animation-duration: 1.5s;
+ }
+ 
+    @keyframes texto {
+     from {
+         transform: translateX(1000px);
+         opacity: 0;
+     to {
+  transform: translateX(0);
+  opacity: 1;
+     }
+    }
 }
 
 /*GRID CONTACTO*//*-----------------------------*/
