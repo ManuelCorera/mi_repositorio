@@ -1208,7 +1208,6 @@ width: fit-content;
    width: 100%;
    margin: -10px;
 }
-}
 
 /*GRID VALORACION*//*--------------------------*/
 
@@ -1331,7 +1330,7 @@ header, nav, section, footer {
 .sinsubrayar {
     text-decoration: none;
 }
- }
+ 
 
 /*GRID CONTACTO*//*--------------------------------------------*/
 #grid-area-contacto {
