@@ -1583,24 +1583,6 @@ header, nav, section, footer {
     border bottom: 1px solid;
     box-shadow: 5px 0 10px rgba(0,0,0,-6);
 }
-.menu_items {
-    display: flex;
-    list-style: none;
-    margin-right: 60px;
-    justify-content: space-between;
-}
-.menu_items li {
-    border-radius: 3px;
-    margin: 0 5px;
-}
-.menu_items li a {
-    padding: 7px 13px;
-    text-decoration: none;
-    font-size: 18px;
-    display: block;
-    text-transform: uppercase;
-    color: white;
-}
 /*CSS GENERAL*/
 .body-nosotros {
     display: block;

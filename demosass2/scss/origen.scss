@@ -1,0 +1,24 @@
+
+//ANIDAMIENTO
+
+.menu_items {
+    display: flex;
+    list-style: none;
+    margin-right: 60px;
+    justify-content: space-between;
+li {
+    border-radius: 3px;
+    margin: 0 5px;
+a {
+    padding: 7px 13px;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    text-transform: uppercase;
+    color: white;
+}
+}
+}
+
+
+
