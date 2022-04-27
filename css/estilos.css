@@ -91,6 +91,22 @@ nav {
     font-style: italic;
     font-weight: bolder;
 }
+/*ANIMACION*/
+.textoanimadoi {
+    animation-name: texto;
+    animation-duration: 1.5s;
+ }
+ 
+    @keyframes texto {
+     from {
+         transform: translateX(1000px);
+         opacity: 0;
+     to {
+  transform: translateX(0);
+  opacity: 1;
+     }
+    }
+}
 
 /*GRID VALORACION*//*-----------------------------*/
 #grid-area-valoracion {
@@ -189,6 +205,22 @@ font-style: italic;
 .sinsubrayar {
 text-decoration: none;
 }
+ /*ANIMACION*/
+ .textoanimadov {
+    animation-name: texto;
+    animation-duration: 1.5s;
+ }
+ 
+    @keyframes texto {
+     from {
+         transform: translateX(1000px);
+         opacity: 0;
+     to {
+  transform: translateX(0);
+  opacity: 1;
+     }
+    }
+ }
 
 /*GRID CONTACTO*//*-----------------------------*/
 #grid-area-contacto {
@@ -587,6 +619,22 @@ footer {
         background-color: black;
         color: aliceblue;
     }
+    /*ANIMACION*/
+.textoanimadoi {
+    animation-name: texto;
+    animation-duration: 1.5s;
+ }
+ 
+    @keyframes texto {
+     from {
+         transform: translateX(1000px);
+         opacity: 0;
+     to {
+  transform: translateX(0);
+  opacity: 1;
+     }
+    }
+}
 
     /*GRID VALORACION*//*-----------------------------*/
     #grid-area-valoracion {
@@ -675,6 +723,22 @@ footer {
         text-align: center;
         width: 100%;
     }
+     /*ANIMACION*/
+.textoanimadov {
+    animation-name: texto;
+    animation-duration: 1.5s;
+ }
+ 
+    @keyframes texto {
+     from {
+         transform: translateX(1000px);
+         opacity: 0;
+     to {
+  transform: translateX(0);
+  opacity: 1;
+     }
+    }
+ }
 
     /*GRID CONTACTO*//*-----------------------------------*/
     #grid-area-contacto {
