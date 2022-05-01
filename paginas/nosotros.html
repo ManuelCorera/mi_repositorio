@@ -3,46 +3,79 @@
     
 <head> 
         <title>Nosotros</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../css/estilos.css" />
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Estilos de CSS Bootstrap local-->
+        <link rel="stylesheet" href="../bootstrap/bootstrap_local/css/bootstrap.css">
+        <!-- Estilos de CSS Propios----------->
+        <link rel="stylesheet" href="../css/estilos.css">
         <link rel="icon" type="image/png" sizes="16x16" href="../imagenes/pelota.jpg">
-    
-        <!--Estilos Sass-->   
-        <link rel="stylesheet" href="../demosass2/css/destino.css" /> 
+        </head>
 
+<body class="fondoindex">
 
-    </head>
+  <!---BARRA DE NAVEGACION------------------>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          
+          <a class="navbar-brand" href="../index.html"><img src="../imagenes/logo.jpg" alt="logo" width="110px" height="55px"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../paginas/productos.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../paginas/nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../paginas/contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../paginas/valoracion.html">Valoranos</a>
+              </li>
+          </div>
+        </div>
+      </nav>
 
-                <body id="grid-area-nosotros" class="body-nosotros">
-            
-                    <section id="articulo1n">
-                        <h1 id="subtitulo-n">QUIÉNES SOMOS</h1> 
-                        <P id="info-n">Somos una pagina dedicada pura y exclusivamente al futbol, creada en el año 2005 y actualizada dia a dia con las mejores novedades del mundo del deporte.</P>
-                    </section>
-                
-                    <header class="logo"><img src="../imagenes/logo.jpg" alt="logo" width="170" height="90"></header>
+  <!-- CONTENIDO PREVIO--------------------->   
+  <h1 class="subtitulonosotros">QUIENES SOMOS</h1>
+  <div>
+    <p class="textonosotros">Somos una pagina dedicada pura y exclusivamente al futbol argentino, creada en el año 2005 y actualizada dia a dia con las mejores novedades.</p>
+  </div>  
+  
+     <!-----CONTENIDO------------------------>
+     <div class="publicidadnosotros">
+        <img src="../imagenes/publicidad.jpg" class="rounded float-end" alt="publicidad">
+     </div>
+     
 
-                    <nav id="menun">
+  <!----PIE DE PAGINA------------------------->
+  <div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+          <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+        </a>
+        <span class="text-muted">&copy; 2022 MC Development.</span>
+      </div>
+  
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+        <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+        <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+      </ul>
+    </footer>
+  </div>
 
+      <!----JavaScript de Bootstrap-----> 
+      <script src="js/bootstrap.js"></script>
 
-                        <UL class="menu_items">
-                            <LI><a href="../index.html" class="sinsubrayar">Inicio</a></LI>
-                            <LI><a href="../paginas/productos.html" class="sinsubrayar">Productos</a></LI>
-                            <LI><a href="../paginas/nosotros.html" class="sinsubrayar">Nosotros</a></LI>
-                            <LI><a href="../paginas/contacto.html" class="sinsubrayar">Contacto</a></LI>
-                            <LI><a href="../paginas/valoracion.html" class="sinsubrayar">Valoranos</a></LI>
-                        </UL>
-               
-                    </nav>
-                
-                    <aside><img src="../imagenes/publicidad.jpg" alt="publicidad" width="195" height="450"></aside>
-                    
-                    <footer class="pie-n">                        
-                        <hr> 
-                        <p>Copyright Webmaster Design 2022, all rights reserved.</p>
-                    
-                    </footer>
-                
-                </body>
-                </html>
-                
+</body>
+</html>

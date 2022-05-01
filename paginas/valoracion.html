@@ -3,62 +3,82 @@
     
 <head> 
         <title>Valoracion</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../css/estilos.css" />
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Estilos de CSS Bootstrap local-->
+        <link rel="stylesheet" href="../bootstrap/bootstrap_local/css/bootstrap.css">
+        <!-- Estilos de CSS Propios----------->
+        <link rel="stylesheet" href="../css/estilos.css">
         <link rel="icon" type="image/png" sizes="16x16" href="../imagenes/pelota.jpg">
         </head>
-        
-        <body id="grid-area-valoracion">
-            
-            <header class="logo"><img src="../imagenes/logo.jpg" alt="logo" width="170" height="100"></header>
 
-                    <nav id="menuv">
+<body class="fondoindex">
 
+  <!---BARRA DE NAVEGACION------------------>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          
+          <a class="navbar-brand" href="../index.html"><img src="../imagenes/logo.jpg" alt="logo" width="110px" height="55px"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../paginas/productos.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../paginas/nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../paginas/contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../paginas/valoracion.html">Valoranos</a>
+              </li>
+          </div>
+        </div>
+      </nav>
 
-                        <UL class="menu_items">
-                            <LI><a href="../index.html" class="sinsubrayar">Inicio</a></LI>
-                            <LI><a href="../paginas/productos.html" class="sinsubrayar">Productos</a></LI>
-                            <LI><a href="../paginas/nosotros.html" class="sinsubrayar">Nosotros</a></LI>
-                            <LI><a href="../paginas/contacto.html" class="sinsubrayar">Contacto</a></LI>
-                            <LI><a href="../paginas/valoracion.html" class="sinsubrayar">Valoranos</a></LI>
-                        </UL>
-               
-                    </nav>
-            
-                <section id="articulo1v">              
-                    <h1 id="subtitulo-v">TU OPINIÓN NOS IMPORTA</h1>
-            </section>
-            
+  <!-- CONTENIDO PREVIO--------------------->
+     <h1 class="subtitulovaloracion">TU OPINION NOS IMPORTA</h1>
+     <H2 class="textovaloracion textoanimadov">DEJANOS TU OPINIÓN, LO VALORAREMOS PARA SEGUIR MEJORANDO NUESTRA COMUNIDAD!</H2>
 
-            
-            <div>
-                <main>
-                    <section id="articulo2v">
-                        
-                        <H2 id="textocuadro-v" class="textoanimadov">DEJANOS TU OPINIÓN, LO VALORAREMOS PARA SEGUIR MEJORANDO NUESTRA COMUNIDAD!</H2>
-                <article id="cuadrogeneral-v" class="textoanimadov">
-                    <p class="cursiva">¿Como fue tu experiencia en el sitio?</p>
-                    <form>
-                       <select name="valoraciones">
-                         <option value="BUENA">Buena</option>
-                         <option value="REGULAR">Regular</option>
-                         <option value="MALA">Mala</option>
-                       </select>
-                       <input type="submit" value="Enviar"/>
-                     </form>
-                </article>
+     <!----OPCIONES------------------------------>
+     <div class="form-floating opcionesvaloracion">
+      <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+        <option selected>-</option>
+        <option value="1">BUENA</option>
+        <option value="2">REGULAR</option>
+        <option value="3">MALA</option>
+      </select>
+      <label for="floatingSelect">COMO FUE TU EXPERIENCIA EN EL SITIO? (su opinión se guardará por unica vez).</label>
+    </div>
 
-                        </section>
- 
-             </div>
-                  
-                </main>
-                
-                <footer class="pie-v">
-                    <hr
-                    <p>Copyright Webmaster Design 2022, all rights reserved.</p>
-            
-                    </footer>
-        
-                </body>
-                </html>
+  <!----PIE DE PAGINA------------------------->
+  <div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+          <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+        </a>
+        <span class="text-muted">&copy; 2022 MC Development.</span>
+      </div>
+  
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+        <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+        <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+      </ul>
+    </footer>
+  </div>
+
+      <!----JavaScript de Bootstrap-----> 
+      <script src="js/bootstrap.js"></script>
+
+</body>
+</html>

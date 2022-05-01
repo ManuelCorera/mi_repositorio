@@ -1,74 +1,90 @@
 <!DOCTYPE html> <!--inicio del documento-->
 <html lang="es">
-    <head> 
-        
+    
+<head> 
         <title>Contacto</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../css/estilos.css" />
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Estilos de CSS Bootstrap local-->
+        <link rel="stylesheet" href="../bootstrap/bootstrap_local/css/bootstrap.css">
+        <!-- Estilos de CSS Propios----------->
+        <link rel="stylesheet" href="../css/estilos.css">
         <link rel="icon" type="image/png" sizes="16x16" href="../imagenes/pelota.jpg">
         </head>
-        
-        <body id="grid-area-contacto" class="body-contacto">  
-            
-            
-            <header class="logo"><img src="../imagenes/logo.jpg" alt="logo" width="170" height="90"></header>
 
-                    <nav id="menuc">
+<body class="fondoindex">
 
+  <!---BARRA DE NAVEGACION------------------>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          
+          <a class="navbar-brand" href="../index.html"><img src="../imagenes/logo.jpg" alt="logo" width="110px" height="55px"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../paginas/productos.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../paginas/nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../paginas/contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../paginas/valoracion.html">Valoranos</a>
+              </li>
+          </div>
+        </div>
+      </nav>
 
-                        <UL class="menu_items">
-                            <LI><a href="../index.html" class="sinsubrayar">Inicio</a></LI>
-                            <LI><a href="../paginas/productos.html" class="sinsubrayar">Productos</a></LI>
-                            <LI><a href="../paginas/nosotros.html" class="sinsubrayar">Nosotros</a></LI>
-                            <LI><a href="../paginas/contacto.html" class="sinsubrayar">Contacto</a></LI>
-                            <LI><a href="../paginas/valoracion.html" class="sinsubrayar">Valoranos</a></LI>
-                        </UL>
-               
-                    </nav>
+  <!-- CONTENIDO PREVIO--------------------->
+     <h1 class="subtitulocontacto">FORMULARIO DE CONTACTO</h1>
+     <H2 class="textocontacto">Envianos un correo</H2>
 
-            <section id="articulo1c">
-                <h1 id="subtitulo-c">FORMULARIO DE CONTACTO</h1>
-            </section>
-              
-            <section id="articulo2c">
-                <div class="caja-c">
-                    <h2 class="box-c">Envíanos un correo:</h2>
-                    
-                    <h3 class="cursiva">Seleccionar género.</h3>   
-                    <span class="cursiva">hombre</span>
-                    <input type="radio" name="sexo" value="hombre" />
-                    <span class="cursiva">mujer</span>
-                    <input type="radio" name="sexo" value="mujer" />
-                    <span class="cursiva">no binario</span>
-                    <input type="radio" name="sexo" value="no binario" /> <br> <br>
-        
-                        <form action="">
-                            <br>
-                        <input type="name" name="nombre" placeholder="Nombre completo"> <br> <br>
-                        <input type="email" name="correo" placeholder="Correo"> <br>
-                         <br> <br>
-                        
-                        <label for="Dejanos un comentario" class="cursiva">Dejanos un comentario:</label> <br>
-                        <textarea name="comentarios" id="comentarios" cols="45" rows="10"></textarea> <br>
-        
-                        <span class="cursiva">Acepta términos y condiciones</span>
-                        <input type="checkbox" name="acepta" value="1" /> <br> <br>
-        
-                            <input type="submit" value="Enviar formulario"/>
-                            <input type="reset" value="Limpiar formulario"/>
-                        
-        
-                    </form>
-                </div>
-            </section>
+     <!-----CONTENIDO------------------------>
+     <div class="mb-3 opcionesvaloracion">
+        <label for="exampleFormControlInput1" class="form-label">Direccion de e-mail</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="juanperez@outlook.com">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label comentariocontacto2">Comentario</label>
+        <textarea class="form-control comentariocontacto" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+      <div class="botonescontacto">
+        <button type="button" class="btn btn-primary btn-sm">Limpiar</button>
+        <button type="button" class="btn btn-secondary btn-sm">Enviar</button>
+      </div>
 
-            
-            <footer class="pie-c">
-                <hr>
-            <p>Copyright Webmaster Design 2022, all rights reserved.</p>
-            </p>
-            </footer>
+      
+     
 
-        </body>
-        </html>
+  <!----PIE DE PAGINA------------------------->
+  <div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+          <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+        </a>
+        <span class="text-muted">&copy; 2022 MC Development.</span>
+      </div>
+  
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+        <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+        <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+      </ul>
+    </footer>
+  </div>
 
+      <!----JavaScript de Bootstrap-----> 
+      <script src="js/bootstrap.js"></script>
+
+</body>
+</html>

@@ -1050,652 +1050,6 @@ footer {
 
 /*DESKTOP*/
 @media (min-width: 1024px){
-    
-    /*GRID INDEX*//*---------------------------------*/
-
-   #grid-area-index {
-    display: grid;
-    height: 100vh;
-    grid-template-areas:
-      "cabeza menu menu"
-      "articulo1 articulo1 articulo1"
-      "articulo2 articulo2 articulo2"
-      "articulo3 articulo3 articulo3"
-      "articulo4 articulo4 articulo4"
-      "publicidad publicidad publicidad"
-      "pie pie pie";
-    grid-template-rows: repeat(100%); 
-    grid-template-columns: repeat(100vw);
-    grid column-gap: 5px;
-    grid-row-gap: 5px;
-
- }
-/*CONTENIDO*/
-header {
-    grid-area: cabeza;
-    display: flex;
-    background-color: green;
- }
- nav {
-    grid-area: menu;
-    display: flex;
-    background-color: green;
-    justify-content: center;
-    align-content: center;
- }
- #articulo1 {
-    grid-area: articulo1; 
-    width: 100%;  
-    height: fit-content;  
- }
- #articulo2 {
-    grid-area: articulo2; 
-    height: fit-content;  
- }
- #articulo3 {
-    grid-area: articulo3;
-    height: fit-content;      
- }
- #articulo4 {
-    grid-area: articulo4;
-    height: fit-content;
- }
- footer {
-    grid-area: pie;
-    background-color: black;
-    color: aliceblue;
-    margin-top: auto;
-    width: 100%;
-    padding: 30px;
-    margin: -10px;
-    position: absolute;
-    border: solid 1px black ;
- }
-/*CSS MENU*/
-.logo {
-    background-color: green;
-    height: 75px;
-    width: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border bottom: 1px solid;
-    box-shadow: 5px 0 10px rgba(0,0,0,-6);
-    color: white;
- }
- #menu {
-    background-color: green;
-    height: 75px;
-    width: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border bottom: 1px solid;
-    box-shadow: 5px 0 10px rgba(0,0,0,-6);
-}
-.menu_items {
-    display: flex;
-    list-style: none;
-    margin-right: 60px;
-    justify-content: space-between;
-}
-.menu_items li {
-    border-radius: 3px;
-    margin: 0 5px;
-}
-.menu_items li a {
-    padding: 7px 13px;
-    text-decoration: none;
-    font-size: 18px;
-    display: block;
-    text-transform: uppercase;
-    color: white;
-}
-/*CSS GENERAL*/
-.body-index {
-    display: block;
-    background-image: url(../imagenes/diego2.jpg);
-    background-size: contain;
-    min-height: 10vh;
-    position: relative;
-}
-header, nav, section, footer {
-    padding: 10px;
-}
-#noticias-index {
-    color: rgb(0, 0, 0);
-    background-color: rgb(175, 212, 180);
-    margin: 10px;
-    padding: 25px;
-    margin-top: -35px;
-    text-align: center;
-    font-style: italic;
-}
-#secciones-index {
-    color: rgb(218, 45, 45);
-    margin: 1px;
-    width: 100%;
-    padding: 5px;
-    text-align: center;
-    background-color: black;
-    font-size: 35px;
-}
-*{
-    box-sizing: border-box;
-}
-#publicidad-index {
-    grid-area: publicidad;
-    text-align: center;
-    background-color: black;
-    margin: -10px;
-}
-#subtitulo-index {
-    color: black;
-    text-align: center;
-    font-weight: normal;
-    background-color: rgb(122, 235, 122);
-    margin: 3px;
-    width: 100vw;
-    padding: 25px;
-    font-size: 30px;
-    font-weight: bold;
-    font-style: italic;
-}
-/*CONTENIDO*/
-.contenido-index {
-    height: auto;
-    /*flexbox*/
-    display: inline-block;
-    width: fit-content;
-}
-.caja1-index {
-    height: auto;
-    width: auto;
-    height: auto;
-    margin: 20px;
-    box-sizing: border-box;
-    font-size: 50px;
-    object-fit: cover;
-    padding: 45px;
-}
-.caja2-index {
-width: fit-content;
-    margin: 20px;
-    box-sizing: border-box;
-    font-size: 50px;
-    object-fit: cover;
-    padding: 45px;
-}
-.padre-flex-index {
-    display: flex;  
-    padding: 10px;
-    border: 2px;
- }
- .hijos-flex-index {
-     margin: 10px;
-     text-align: center;
-     color: aliceblue;
- }
- /* CLASES */
- .cursiva {
-    font-style: italic;
-}
-.negrita {
-    font-weight: bold;
-}
-.normal {
-    font-weight: normal;
-}
-.textogrande {
-    font-size: 35px;
-}
-.textomasgrande {
-    font-size: 50px;
-}
-.textomediano {
-    font-size: 30px;
-}
-.sinsubrayar {
-    text-decoration: none;
-}
-.bloque {
-    display: block;
-}
-.textopequeño {
-    font size: 10px;
-}
-.alinear {
-    text-align: center;
-}
-.fondo {
-   background-color: black;
-   width: 100%;
-   margin: -10px;
-}
-/*ANIMACION*/
-.textoanimadoi {
-    animation-name: texto;
-    animation-duration: 1.5s;
- }
- 
-    @keyframes texto {
-     from {
-         transform: translateX(1000px);
-         opacity: 0;
-     to {
-  transform: translateX(0);
-  opacity: 1;
-     }
-    }
-}
-
-
-/*GRID VALORACION*//*--------------------------*/
-
-#grid-area-valoracion {
-    display: grid;
-    grid-template-areas:
-      "cabeza menu menu"
-      "articulo1 articulo1 articulo1"
-      "articulo2 articulo2 articulo2"
-      "pie pie pie";
-      grid-template-rows: 100px auto auto 75px; 
-      grid-template-columns: 20% auto 15%;
-    grid column-gap: 5px;
-    grid-row-gap: 10px;
-    background-color: rgb(169, 180, 180);
- }
- /*CONTENIDO*/
- header {
-    grid-area: cabeza;
-    display: flex;
-    background-color: green;
- }
- nav {
-    grid-area: menu;
-    display: flex;
-    background-color: green;
-    justify-content: center;
-    align-content: center;
- }
- #articulo1v {
-    grid-area: articulo1; 
-    width: 100%;  
-    height: fit-content; 
- }
- #articulo2v {
-    grid-area: articulo2; 
-    width: 100vw;
- }
- footer {
-    grid-area: pie;
- }
- /*CSS GENERAL*/
- #subtitulo-v {
-    text-align: left;
-    color: rgb(255, 255, 255);
-    margin: 5px;
-    width: 50vw;
-    padding: 20px;
-    background-color: black;
-}
-header, nav, section, footer {
-    padding: 10px;
-}
-#cuadrogeneral-v {
-    background-color: rgb(132, 151, 151);
-    margin: 5px;
-    padding: 5px;
-    box-shadow: 10px;
-    text-align: center;
-}
-#textocuadro-v {
-    text-align: center;
-    font-style: italic;
-}
-.pie-v {
-    background-color: black;
-    color: aliceblue;
-    margin-top: auto;
-    width: 100vw;
-    padding: 30px;
-    margin: 1px;
-    position: absolute;
-    bottom: 0%;
-    border: solid 1px black ;
-}
- /*CSS MENU*/
- .logo {
-    background-color: green;
-    height: 75px;
-    width: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border bottom: 1px solid;
-    box-shadow: 5px 0 10px rgba(0,0,0,-6);
-    color: white;
- }
- #menuv {
-    background-color: green;
-    height: 75px;
-    width: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border bottom: 1px solid;
-    box-shadow: 5px 0 10px rgba(0,0,0,-6);
-}
-.menu_items {
-    display: flex;
-    list-style: none;
-    margin-right: 60px;
-    justify-content: space-between;
-}
-.menu_items li {
-    border-radius: 3px;
-    margin: 0 5px;
-}
-.menu_items li a {
-    padding: 7px 13px;
-    text-decoration: none;
-    font-size: 18px;
-    display: block;
-    text-transform: uppercase;
-    color: white;
-}
-/* CLASES */
-.cursiva {
-    font-style: italic;
-}
-.sinsubrayar {
-    text-decoration: none;
-}
- /*ANIMACION*/
-.textoanimadov {
-    animation-name: texto;
-    animation-duration: 1.5s;
- }
- 
-    @keyframes texto {
-     from {
-         transform: translateX(1000px);
-         opacity: 0;
-     to {
-  transform: translateX(0);
-  opacity: 1;
-     }
-    }
- }
-
-/*GRID CONTACTO*//*--------------------------------------------*/
-#grid-area-contacto {
-    display: grid;
-    grid-template-areas:
-      "cabeza menu menu"
-      "articulo1 articulo1 articulo1"
-      "articulo2 articulo2 articulo2"
-      "pie pie pie";
-      grid-template-rows: 100px 10px auto 10px; 
-      grid-template-columns: 20% auto 15%;
-    grid column-gap: 5px;
-    grid-row-gap: 5px;
- }
- /*CONTENIDO*/
- header {
-    grid-area: cabeza;
-    display: flex;
-    background-color: green;
- }
- nav {
-    grid-area: menu;
-    display: flex;
-    background-color: green;
-    justify-content: center;
-    align-content: center;
- }
- #articulo1c {
-    grid-area: articulo1; 
-    width: 100%;  
-    height: fit-content; 
- }
- #articulo2c {
-    grid-area: articulo2; 
-    width: 100vw;
- }
- footer {
-    grid-area: pie;
- }
- /*CSS MENU*/
-      .logo {
-    background-color: green;
-    height: 75px;
-    width: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border bottom: 1px solid;
-    box-shadow: 5px 0 10px rgba(0,0,0,-6);
-    color: white;
- }
- #menuc {
-    background-color: green;
-    height: 75px;
-    width: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border bottom: 1px solid;
-    box-shadow: 5px 0 10px rgba(0,0,0,-6);
-}
-.menu_items {
-    display: flex;
-    list-style: none;
-    margin-right: 60px;
-    justify-content: space-between;
-}
-.menu_items li {
-    border-radius: 3px;
-    margin: 0 5px;
-}
-.menu_items li a {
-    padding: 7px 13px;
-    text-decoration: none;
-    font-size: 18px;
-    display: block;
-    text-transform: uppercase;
-    color: white;
-}
- /*CSS GENERAL*/
- header, nav, section, footer {
-    padding: 10px;
-}
-.caja-c{
-    background-color: rgb(120, 187, 117);
-    display: block;
-    margin: 70px;
-    padding: 15px;
-    text-align: center;
-    width: 80vw;
-}
-.pie-c {
-    margin-bottom: -360px;
-    background-color: black;
-    color: aliceblue;
-    margin-top: auto;
-    width: 100%;
-    padding: 30px;
-    position: absolute;
-    border: solid 1px black ;
-    bottom: 0%;
-}
-.body-contacto {
-    font-family: "ramaraja";
-    src: url(Ramaraja-Regular.ttf);
-    background-image: url(../imagenes/diego2.jpg);
-    background-size: contain;
-    min-height: 100vh;
-    display: block;
-    margin: 5px;
-}
-#subtitulo-c {
-    text-align: left;
-    color: rgb(255, 255, 255);
-    margin: 5px;
-    width: 40vw;
-    padding: 20px;
-    background-color: black;
-}
-* {
-    box-sizing: border-box;
-}
-.box-c {
-    color: white;
-    font-size: 45px;
-    text-decoration: underline;
-} 
-/* CLASES */
-.cursiva {
-    font-style: italic;
-}
-.negrita {
-    font-weight: bold;
-}
-.textogrande {
-    font-size: 35px;
-}
-.textomasgrande {
-    font-size: 50px;
-}
-.textomediano {
-    font-size: 30px;
-}
-.sinsubrayar {
-    text-decoration: none;
-}
-.textochico {
-    font-size: 30px;
-}
-.subrayar {
-    text-decoration: underline;
-}
-.alinear {
-    text-align: center;
-}
-
-/*GRID NOSOTROS*//*-------------------------------------------*/
-#grid-area-nosotros {
-    display: grid;
-    grid-template-areas:
-      "cabeza menu menu"
-      "articulo1 articulo1 publicidad"
-      "pie pie pie";
-    grid-template-rows: 100px 2fr 75px; 
-    grid-template-columns: 20% auto 15%;
-    grid column-gap: 5px;
-    grid-row-gap: 5px;
- }
- /*CONTENIDO*/
- header {
-    grid-area: cabeza;
-    display: flex;
-    background-color: green;
- }
- nav {
-    grid-area: menu;
-    display: flex;
-    background-color: green;
-    justify-content: center;
-    align-content: center;
- }
- aside {
-    grid-area: publicidad;
- }
- #articulo1n {
-    grid-area: articulo1;     
- }
- footer {
-    grid-area: pie;
- } 
- .pie-n {
-    background-color: black;
-    color: aliceblue;
-    margin-top: auto;
-    width: 100%;
-    padding: 10px;
-    bottom: 0%;
- }
- /*CSS MENU*/
- .logo {
-    background-color: green;
-    height: 75px;
-    width: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border bottom: 1px solid;
-    box-shadow: 5px 0 10px rgba(0,0,0,-6);
-    color: white;
- }
- #menun {
-    background-color: green;
-    height: 75px;
-    width: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border bottom: 1px solid;
-    box-shadow: 5px 0 10px rgba(0,0,0,-6);
-}
-/*CSS GENERAL*/
-.body-nosotros {
-    display: block;
-    background-image: url(../imagenes/diego2.jpg);
-    background-size: cover;
-    min-height: 100vh;
-}
-header, nav, section, footer {
-    padding: 10px;
-}
-#subtitulo-n {
-    text-align: left;
-    color: rgb(255, 255, 255);
-    margin: 5px;
-    width: 25vw;
-    padding: 20px;
-    background-color: black;
-    font-size: 35px;
-}
-#info-n {
-    background-color: rgb(203, 207, 212);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding: 20px;
-    text-align: left;
-    font-size: 30px;
-}
-* {
-    box-sizing: border-box;
-}
-/* CLASES */
-.textogrande {
-    font-size: 35px;
-}
-.textomasgrande {
-    font-size: 50px;
-}
-.textomediano {
-    font-size: 30px;
-}
-.sinsubrayar {
-    text-decoration: none;
-}
-.textochico {
-    font-size: 30px;
-}
-.alinear {
-    text-align: center;
-}
-
 /*GRID PRODUCTOS*//*----------------------------------------------*/
     #grid-area-productos {
         display: grid;
@@ -1893,3 +1247,168 @@ header, nav, section, footer {
 }
 
 
+/*-------------------------------------------------------------------------------------------*/
+
+/*ESTILOS PROPIOS BOOTSTRAP*/
+
+/*CLASES INDEX*//*---------------------------------------*/
+.separadoresindex {
+    text-align: center;
+    background-color: black;
+    color: red;
+    margin: 2px;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.fraseindex {
+    font-size: 25px;
+    font-weight: bold ;
+    text-align: center;
+    background-color: lightgreen;
+    margin: 10px;
+}
+.subvideosindex {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(149, 167, 144);
+}
+.publicidadindex {
+    justify-content: center;
+}
+.fondoindex {
+    background-color: rgb(167, 197, 162);
+}
+/*ANIMACION*/
+.textoanimadoi {
+    animation-name: texto;
+    animation-duration: 1.0s;
+ }
+ 
+    @keyframes texto {
+     from {
+         transform: translateX(1000px);
+         opacity: 0;
+     to {
+  transform: translateX(0);
+  opacity: 1;
+     }
+    }
+}
+
+/*CLASES VALORACION*//*-----------------------------------*/
+.subtitulovaloracion {
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    margin: 30px;
+    padding: 20px;
+}
+.textovaloracion {
+    font-style: italic;
+    font-size: 25px;
+    text-align: center;
+    margin: 20px;
+    font-weight: bolder;
+}
+.opcionesvaloracion {
+    margin-bottom: 20%;
+    margin-top: 2px;
+    width: 50%;
+    margin-left: 25%;
+}
+ /*ANIMACION*/
+ .textoanimadov {
+    animation-name: texto;
+    animation-duration: 1.5s;
+ }
+ 
+    @keyframes texto {
+     from {
+         transform: translateX(1000px);
+         opacity: 0;
+     to {
+  transform: translateX(0);
+  opacity: 1;
+     }
+    }
+ }
+
+ /*CONTACTO*/
+.subtitulocontacto {
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    margin: 30px;
+    padding: 20px;
+}
+.textocontacto {
+    font-style: italic;
+    font-size: 25px;
+    text-align: center;
+    margin: 20px;
+    font-weight: bolder;
+}
+.comentariocontacto {
+    margin-bottom: 20%;
+    margin-top: 2px;
+    width: 50%;
+    margin-left: 25%;
+}
+.comentariocontacto2 {
+    width: 50%;
+    margin-left: 25%;
+}
+.botonescontacto {
+    width: 50%;
+    margin-left: 45%;
+    margin-top: -10%;
+}
+
+/*NOSOTROS*/
+.textonosotros {
+    font-style: italic;
+    font-size: 25px;
+    text-align: center;
+    margin: 20px;
+    font-weight: bolder;
+    width: 50%;
+    text-align: left;
+    margin-left: 35px;
+}
+.publicidadnosotros {
+    margin-bottom: 50%;
+    margin-top: -150px;
+}
+.subtitulonosotros {
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    margin: 30px;
+    padding: 20px;
+}
+
+/*PRODUCTOS*/
+.botonesproductos {
+    width: 50%;
+    margin-left: 60%;
+    text-align: center;
+}
+.itemproductos {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(149, 167, 144); 
+}
+.subtituloproductos {
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    margin: 30px;
+    padding: 20px;
+}
+.textoproductos{
+    font-style: italic;
+    font-size: 25px;
+    text-align: center;
+    margin: 20px;
+    font-weight: bolder;
+}

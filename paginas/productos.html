@@ -1,102 +1,94 @@
 <!DOCTYPE html> <!--inicio del documento-->
 <html lang="es">
-    <head> 
-        
+    
+<head> 
         <title>Productos</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../css/estilos.css" />
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Estilos de CSS Bootstrap local-->
+        <link rel="stylesheet" href="../bootstrap/bootstrap_local/css/bootstrap.css">
+        <!-- Estilos de CSS Propios----------->
+        <link rel="stylesheet" href="../css/estilos.css">
         <link rel="icon" type="image/png" sizes="16x16" href="../imagenes/pelota.jpg">
         </head>
-        
-        <body id="grid-area-productos" class="body-productos">
 
-            
-            <header class="logo"><img src="../imagenes/logo.jpg" alt="logo" width="170" height="90"></header>
+<body class="fondoindex">
 
-                    <nav id="menup">
+  <!---BARRA DE NAVEGACION------------------>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          
+          <a class="navbar-brand" href="../index.html"><img src="../imagenes/logo.jpg" alt="logo" width="110px" height="55px"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../paginas/productos.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../paginas/nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../paginas/contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../paginas/valoracion.html">Valoranos</a>
+              </li>
+          </div>
+        </div>
+      </nav>
 
-
-                        <UL class="menu_items">
-                            <LI><a href="../index.html" class="sinsubrayar">Inicio</a></LI>
-                            <LI><a href="../paginas/productos.html" class="sinsubrayar">Productos</a></LI>
-                            <LI><a href="../paginas/nosotros.html" class="sinsubrayar">Nosotros</a></LI>
-                            <LI><a href="../paginas/contacto.html" class="sinsubrayar">Contacto</a></LI>
-                            <LI><a href="../paginas/valoracion.html" class="sinsubrayar">Valoranos</a></LI>
-                        </UL>
-               
-                    </nav>
-                      
-                
-                    <section id="articulo1p">
-                        <h1 id="subtitulo-p">TIENDA ONLINE</h1> 
-                        <h2 class="subtitulo-p">¡APROVECHA LAS ULTIMAS OFERTAS!</h2>
-                    </section> 
-           
-                    
-                    <section id="articulo2p">
-                            <div class="contenido-p">
-                 
-                    
-                                <div class="caja1-p">
-                          
-                                    <article>
-                                        <h3 class="alinear cursiva textochico negrita subrayar">Tazas Deportivas</h3>
-                                        <img src="../imagenes/tazadeargentina.jpg" width="480" height="330"/> <br> <br>
-                    
-                                        <div class="opciones-p">
-                                        <span>blanca</span>
-                                        <input type="radio" name="color" value="blanca" />
-                                        <span>azul</span>
-                                        <input type="radio" name="color" value="azul" />
-                                        </div>
-                    
-                              </div>
-                            
-                            <div class="caja2-p">
-        
-                        <article>
-        
-                            <h3 class="alinear cursiva textochico negrita subrayar">Remeras Deportivas</h3>
-                            <IMG SRC="../imagenes/camisetadeargentina.jpg" width="480" height="330"> <br> <br>
-                                
-                            <div class="opciones-p">
-                            <span>titular</span>
-                            <input type="radio" name="estilo" value="titular" />
-                            <span>suplente</span>
-                            <input type="radio" name="estilo" value="suplente" />
-                            </div>
-        
-                        </article>
-        
-                            </div>
-                        
-                          
-
-                        </div>
-        
-                    </div>
-                            
-                        </section>
-                        
-                        <section id="articulo3p" class="comprar-p">
-                            <input type="reset" value="Limpiar carrito" class="negrita"/> <br><br>
-                            <input type="submit" value="Comprar" class="textomediano negrita"/> 
-                        </section>
-
-                    <footer class="pie-p">
-                        <hr>
-                        <p>Copyright Webmaster Design 2022, all rights reserved.</p>
-                        </p>
-                        </footer>
-            
-                    </body>
-                    </html>
+  <!-- CONTENIDO PREVIO--------------------->   
+  <h1 class="subtituloproductos">TIENDA ONLINE</h1>
+  <div>
+    <p class="textoproductos">Aprovecha las ultimas ofertas!</p>
+  </div>  
+ 
+  <!------------CONTENIDO PRODUCTOS------------>    
+  <div class="container m-5">
+    <div class="row">
+      <div class="col">
+        <h3 class="itemproductos">TAZA DE ARGENTINA</h3>
+        <img src="../imagenes/tazadeargentina.jpg" alt="tazadeargentina" width="500" height="400">
+      </div>
+      <div class="col">
+        <h3 class="itemproductos">CAMISETA SELECCIÓN</h3>
+        <img src="../imagenes/camisetadeargentina.jpg" alt="camisetadeargentina" width="500" height="400">
+      </div>
+    </div>
+  </div>
+  <div class="botonesproductos">
+    <button type="button" class="btn btn-primary btn-sm">Calcular Envio</button>
+    <button type="button" class="btn btn-secondary btn-sm">Añadir Combo</button>
+  </div>
 
 
+  <!----PIE DE PAGINA------------------------->
+  <div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+          <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+        </a>
+        <span class="text-muted">&copy; 2022 MC Development.</span>
+      </div>
+  
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+        <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+        <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+      </ul>
+    </footer>
+  </div>
 
+      <!----JavaScript de Bootstrap-----> 
+      <script src="js/bootstrap.js"></script>
 
-                    
-
-
-
-
+</body>
+</html>
