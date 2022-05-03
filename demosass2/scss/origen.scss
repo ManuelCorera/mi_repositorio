@@ -1,6 +1,6 @@
+/*(SASS I)*/
 
 //ANIDAMIENTO
-
 .menu_items {
     display: flex;
     list-style: none;
@@ -20,5 +20,36 @@ a {
 }
 }
 
+/*-------------------------------------------*/
+
+/*(SASS II)*/
+
+/*********************************
+EXTENDS Y MIXINS
+**********************************/
+
+// EXTENDS
+.botonescontacto {
+    width: 50%;
+    margin-left: 45%;
+    margin-top: -10%;
+}
+.botonescontacto-nuevo {
+    @extend .botonescontacto;
+    background-color: black;
+    color: rgb(3, 180, 3);
+}
+
+// MIXINS
+@mixin tamanio($anchito, $alturita) {
+    width: $anchito;
+    height: $alturita;
+}
+.videosindex{
+    @include tamanio(500, 300)
+}
+.imgproductos {
+    @include tamanio(500, 400)
+}
 
 

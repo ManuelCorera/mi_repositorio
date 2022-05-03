@@ -1,3 +1,4 @@
+/*(SASS I)*/
 .menu_items {
   display: flex;
   list-style: none;
@@ -15,6 +16,32 @@
   display: block;
   text-transform: uppercase;
   color: white;
+}
+
+/*-------------------------------------------*/
+/*(SASS II)*/
+/*********************************
+EXTENDS Y MIXINS
+**********************************/
+.botonescontacto, .botonescontacto-nuevo {
+  width: 50%;
+  margin-left: 45%;
+  margin-top: -10%;
+}
+
+.botonescontacto-nuevo {
+  background-color: black;
+  color: rgb(3, 180, 3);
+}
+
+.videosindex {
+  width: 500;
+  height: 300;
+}
+
+.imgproductos {
+  width: 500;
+  height: 400;
 }
 
 /*# sourceMappingURL=destino.css.map */
