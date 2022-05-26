@@ -29,10 +29,12 @@
     background-color: rgb(167, 197, 162);
 }
 .carruselindex {
-    background-color: rgb(136, 241, 163);
+    background-color: rgb(197, 197, 197);
     color: black;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 24px;
+    top: auto;
+    bottom: 2%;
 }
 .videosindex {
     text-align: center;
@@ -134,10 +136,6 @@
     text-align: left;
     margin-left: 35px;
 }
-.publicidadnosotros {
-    margin-bottom: 50%;
-    margin-top: -150px;
-}
 .subtitulonosotros {
     background-color: black;
     color: white;
@@ -148,9 +146,8 @@
 
 /*CLASES PRODUCTOS*//*-----------------------------------*/
 .botonesproductos {
-    width: 50%;
-    margin-left: 60%;
-    text-align: center;
+    text-align: right;
+    padding-right: 15%;
 }
 .itemproductos {
     text-align: center;
@@ -173,6 +170,60 @@
 }
 .imgproductos {
     text-align: center;
+}
+.productosbox {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+/*----------------REDES SOCIALES----------------------------------*/
+.social-bar {
+	position: fixed;
+	right: 0;
+	top: 35%;
+	font-size: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	z-index: 100;
+}
+
+.icon {
+	color: white;
+	text-decoration: none;
+	padding: .7rem;
+	display: flex;
+	transition: all .5s;
+}
+
+.icon-facebook {
+	background: #2E406E;
+}
+
+.icon-twitter {
+	background: #339DC5;
+}
+
+.icon-youtube {
+	background: #E83028;
+}
+
+.icon-instagram {
+	background: #3F60A5;
+}
+
+.icon:first-child {
+	border-radius: 1rem 0 0 0;
+}
+
+.icon:last-child {
+	border-radius: 0 0 0 1rem;
+}
+
+.icon:hover {
+	padding-right: 3rem;
+	border-radius: 1rem 0 0 1rem;
+	box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.42);
 }
 
 /*-------------------------------------------------/*MEDIA QUERIES*//*-----------------------------------------------------------------------------------------*/
